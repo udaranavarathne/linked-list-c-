@@ -37,4 +37,15 @@ class list
 			
 		}
 	}
+	void displaynode()
+	{
+		
+		node *temp = new node;
+		temp = head;
+		while (temp!=null)
+		{
+			cout<<temp->data<<"\t"
+			temp= temp->next;
+		}
+	}
 }
