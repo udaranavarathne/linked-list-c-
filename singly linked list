@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int data;
+	node *next;
+}
+
+class list
+{
+	private:
+	node *head, *tail;
+	
+	public:
+	list()
+	{
+		head= NULL;
+		tail= NULL;
+	}
+	
+	void createnode(int val)
+	{
+		node *temp = new node;
+		temp ->data=val;
+		temp ->next= null;
+		if (head==null)
+		{
+			head = temp;
+			tail = temp;
+			temp = null;
+		}	
+		else
+		{
+			tail ->next=temp;
+			tail = temp;
+			
+		}
+	}
+}
