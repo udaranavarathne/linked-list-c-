@@ -48,4 +48,11 @@ class list
 			temp= temp->next;
 		}
 	}
+	void insertStart(int val)
+	{
+		node *temp=new node;
+		temp ->data=val;
+		temp->next=head;
+		head=temp;
+	}
 }
